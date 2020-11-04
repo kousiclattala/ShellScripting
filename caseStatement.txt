@@ -1,0 +1,38 @@
+
+-----------*CASE SWITCH*---------------------------------------
+read -p "Are you 21 or older? " ANSWER
+case [ $ANSWER ] in
+	[yY] | [yY\] [eE] [sS])
+	echo "You can have beer :)"
+	;;
+	[nN] | [nN] [oO])
+	echo "Sorry, no drinking"
+	;;
+    *)
+	echo "Please enter y/yes or n/no
+	;;
+esac
+
+-----------------*File renaming*-------------------------------
+FILES=$(ls *.txt) #list all the files which are text files
+NEW="new"
+for FILE in $FILES
+do
+	echo "Renaming $FILE to new-$FILE"
+	mv $FILE $NEW-$FILE
+done
+
+---------------* READ Through Line by Line *-------------------
+LINE=1
+while read -r CURRENT_LINE
+do
+	echo "$LINE: $CURRENT_LINE"
+	((LINE++))
+done < "./new-1.txt"
+
+-------------*create a folder and write to a file*-------------------------
+mkdir hello
+touch "hello/world.txt"
+echo "Hello World" >> "hello/world.txt" #it will write the contents to file instead of printing in the command line.
+echo "Created hello/world.txt"
+

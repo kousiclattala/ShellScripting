@@ -1,0 +1,27 @@
+
+variable_name=variable_value
+
+don't include spaces to equal
+
+to get input from person 
+
+read <variable name>
+
+special variables
+
+$<variable>
+
+$0 - filename of the script
+
+$# - number of arguments supplied to a script
+
+$* - all arguments double coated
+
+$@ - particular argument which are double coated
+
+$? - exit status
+
+$$ - process number of the current shell script 
+
+
+

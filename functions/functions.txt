@@ -1,0 +1,30 @@
+
+functions name() {
+	list of commands
+}
+
+Example functions
+
+hello(){
+	echo "Hello Learner"
+}
+
+#invoke function
+hello
+
+#To return the value from the function
+#Use return statement
+
+hello(){
+	echo Hello
+	return 10
+}
+
+#Invoke function
+hello
+
+#Capture the return value
+ret=$? #this gets the reuturn value and we are storing it in a variable
+echo 'Returned value is $ret'
+
+
